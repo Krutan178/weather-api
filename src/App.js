@@ -9,7 +9,7 @@ function App() {
 
   // const url = `http://https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=b7f6d336c0539940cb0081c5a978ccfb`;
   const url = location
-    ? `http://api.weatherapi.com/v1/current.json?key=056946f0f03f49d883072834250801&q=${location}&aqi=no`
+    ? `https://api.weatherapi.com/v1/current.json?key=056946f0f03f49d883072834250801&q=${location}&aqi=no`
     : null;
 
   const searchlocation = (event) => {

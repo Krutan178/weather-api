@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# ⛅ Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A clean, full-screen weather app built with React. Type a city, hit **Enter**, and get the current conditions with a live background image that matches the weather.
 
-## Available Scripts
+**🔴 [Open Live Demo](https://krutan178.github.io/weather-api/)**
 
-In the project directory, you can run:
+[![Live Demo](https://img.shields.io/badge/live%20demo-weather--api-orange?logo=weather&logoColor=white)](https://krutan178.github.io/weather-api/)
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🔎 **Instant search** — press Enter on any city name
+- 🌡️ Full current-conditions card: temperature (°C), condition text, and icons for rain / precipitation / wind speed / humidity
+- 🖼️ Dynamic backgrounds — the app switches between a day theme and a cool night theme
+- 📱 Responsive, minimal UI
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+| Layer          | Choice                     |
+| -------------- | -------------------------- |
+| UI             | React 19                   |
+| Build tool     | Create React App 5         |
+| HTTP requests  | axios                      |
+| Weather data   | [WeatherAPI.com](https://www.weatherapi.com/) (free tier) |
+| Deployment     | GitHub Pages (auto via Actions) |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Getting Started
 
-### `npm run build`
+```bash
+git clone https://github.com/Krutan178/weather-api.git
+cd weather-api
+npm install
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Open [http://localhost:3000](http://localhost:3000) and search for a city (Mumbai, Tokyo, Berlin…).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> **Note:** the WeatherAPI key lives in `src/App.js`. To use your own, create a free account at [weatherapi.com](https://www.weatherapi.com/signup.aspx) and swap the `key` value — and for production, move the key to an env variable (`REACT_APP_WEATHER_API_KEY`).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🌐 Deployment
 
-### `npm run eject`
+The app auto-deploys to **GitHub Pages** on every push to `main` — no manual builds needed:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Workflow: [`.github/workflows/pages.yml`](.github/workflows/pages.yml)
+- Live URL: https://krutan178.github.io/weather-api/
+- Re-run manually from the **Actions** tab if you ever need it (custom `workflow_dispatch`).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📄 License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT — see [`LICENSE`](LICENSE) if added. Free to fork and build on.
